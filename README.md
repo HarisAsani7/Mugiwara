@@ -20,13 +20,12 @@ This example illustrates how an API can be documented including Swagger/OpenAPI.
 
 ### Scenario
 
-A Football-Team-Manager is a small tool that allows coaches to manage their team. Coaches can change their team in e.g. by changing players or even changing the position.
+A Football-Team-Manager is a small tool that allows coaches to manage their team. Coaches can change their team in e.g. by changing players.
 
 ### Use Case
-- UC-1 [Login on A-CRM]: Agents can log-in by entering an playerPosition address and password. As an extension, new agents my register first.
-- UC-2 [Register on A-CRM]: Agents can register to get an account (profile) to access the A-CRM system.
-- UC-3 [Edit a player]: Agents can create, update and delete players.
-- UC-4 [Show a player list]: Agents can get an overview over their players based on a player list. As an extension they can create, update and delete players (UC-3).
+- UC-1 [Login on A-CRM]: A User can create other Coaches and play with them
+- UC-2 [Register on A-CRM]: Coach can create, edit, update and delete players.
+- UC-3 [Edit a player]: Coaches can get an overview of all coaches.
 
 ## Design
 
