@@ -22,6 +22,8 @@ This example illustrates how an API can be documented including Swagger/OpenAPI.
 
 A Football-Team-Manager is a small tool that allows coaches to manage their team. Coaches can change their team in e.g. by changing players.
 
+![](Mugiwara_UseCase.png)
+
 ### Use Case
 - UC-1 [Login on A-CRM]: A User can create other Coaches and play with them
 - UC-2 [Register on A-CRM]: Coach can create, edit, update and delete players.
@@ -85,6 +87,8 @@ A Football-Team-Manager is a small tool that allows coaches to manage their team
 The `rocks.process.acrm.data.domain` package contains the following domain objects / entities including getters and setters:
 
 This would be the ERD representation of the domain model:
+![](Mugiwara_DomainModel.png)
+
 
 ### Business Layer
 
@@ -102,7 +106,7 @@ Further can be seen using the Swagger-UI.
 
 This spring boot application can be deployed to Heroku by adding the following `Procfile` to the project root:
 ```console
-web: java -Dserver.port=$PORT $JAVA_OPTS -jar /target/*.jar
+web java -Dserver.port=$PORT $JAVA_OPTS -jar target/digipr-acrm-api-0.0.1-SNAPSHOT.jar
 ```
 
 Finally the Swagger-UI can be access using the Heroku app specific address such as: `https://***.herokuapp.com/swagger-ui.html`
