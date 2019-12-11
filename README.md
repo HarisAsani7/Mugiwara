@@ -34,27 +34,29 @@ A Football-Team-Manager is a small tool that allows coaches to manage their team
 ### Endpoint Prototype
 **Path**: [`/api/player`](/api/player) 
 
-**Method:** `POST`
+**Method:** `GET` getAllPlayers
 
 **Sample Request**  • *Header:* `Content-Type: application/json` • *Body:*
 
 ```JSON
-{
-  "coach": {
-    "players": [
-      null
-    ],
-    "playerPosition": "string",
-    "playerId": 0,
-    "playerName": "string",
-    "password": "string",
-    "remember": "string"
+  {
+    "playerId": 1,
+    "playerFirstName": "Cristiano",
+    "playerLastName": "Ronaldo",
+    "playerPosition": "Striker"
   },
-  "playerPosition": "string",
-  "playerId": 0,
-  "playerNumber": "string",
-  "playerName": "string"
-}
+  {
+    "playerId": 2,
+    "playerFirstName": "Sergio",
+    "playerLastName": "Ramos",
+    "playerPosition": "Defender"
+  },
+  {
+    "playerId": 3,
+    "playerFirstName": "Luca",
+    "playerLastName": "Modric",
+    "playerPosition": "Middlefield"
+  }
 ```
 
 • *Optional:* `...`
@@ -63,21 +65,21 @@ A Football-Team-Manager is a small tool that allows coaches to manage their team
 
 ```JSON
 {
-  "coach": {
-    "players": [
-      null
-    ],
-    "playerPosition": "string",
+  {
+    "coach": {
+      "coachId": 0,
+      "coachName": "string",
+      "players": [
+        null
+      ],
+      "remember": "string",
+      "teamName": "string"
+    },
+    "playerFirstName": "string",
     "playerId": 0,
-    "playerName": "string",
-    "password": "string",
-    "remember": "string"
-  },
-  "playerPosition": "string",
-  "playerId": 0,
-  "playerNumber": "string",
-  "playerName": "string"
-}
+    "playerLastName": "string",
+    "playerPosition": "string"
+  }
 ```
 
 **Error Response** • *Code:* `404 NOT FOUND`
