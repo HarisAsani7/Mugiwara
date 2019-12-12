@@ -59,7 +59,7 @@ public class PlayerEndpoint {
 
     }
 
-    @PutMapping(path = "/film/{filmId}", consumes = "application/json", produces = "application/json")
+    @PutMapping(path = "/player/{playerId}", consumes = "application/json", produces = "application/json")
     public ResponseEntity<Player> putFilm(@RequestBody Player player, @PathVariable(value = "playerId") String playerId) {
         try {
             player.setPlayerId(Long.parseLong(playerId));
